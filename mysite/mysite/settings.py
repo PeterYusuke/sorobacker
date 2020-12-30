@@ -25,7 +25,9 @@ SECRET_KEY = 't!i&orr9xhs7^0y+pu(lh$f51h&iknc%m&t1%esel_k-9+ggjl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "sorobacker.df.r.appspot.com",
+]
 
 
 # Application definition
@@ -121,3 +123,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = 'static/'
