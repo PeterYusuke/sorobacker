@@ -8,9 +8,9 @@ jobs:
     executor: python/default
     steps:
       - checkout
-      - run: pip install -r mysite/requirements.txt
+      - run: pip install -r sorobacus/requirements.txt
       - run:
-          command: mysite/manage.py test
+          command: sorobacus/manage.py test
           name: Test
 
 workflows:
