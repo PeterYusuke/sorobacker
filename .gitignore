@@ -1,2 +1,5 @@
 # pyc file
 *.pyc
+
+# virtual environment
+env/
