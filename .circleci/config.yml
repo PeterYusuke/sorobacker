@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run: pip install -r requirements.txt
       - run:
-          command: sorobacus/manage.py test
+          command: manage.py test
           name: Test
 
 workflows:
