@@ -8,7 +8,7 @@ jobs:
     executor: python/default
     steps:
       - checkout
-      - run: pip install -r sorobacus/requirements.txt
+      - run: pip install -r requirements.txt
       - run:
           command: sorobacus/manage.py test
           name: Test
