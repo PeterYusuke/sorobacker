@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run: pip install -r requirements.txt
       - run:
-          command: manage.py test
+          command: python3 manage.py test
           name: Test
 
 workflows:
