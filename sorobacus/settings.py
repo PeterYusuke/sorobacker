@@ -40,9 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    # The home app
-    'home.apps.HomeCofnig',
 ]
 
 MIDDLEWARE = [
@@ -60,7 +57,9 @@ ROOT_URLCONF = 'sorobacus.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            'sorobacus/templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
