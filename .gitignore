@@ -3,3 +3,8 @@
 
 # virtual environment
 env/*
+
+!.README
+
+# SASS file
+sorobacus/css/*
