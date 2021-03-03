@@ -4,7 +4,7 @@ STATIC = sorobacus/static
 SCSS = sorobacus/scss
 
 compile-scss:
-	pysassc $(SCSS)/index.scss $(STATIC)/css/styles.css -s compressed
+	pysassc $(SCSS)/index.scss $(STATIC)/css/styles.css -s expanded
 
 run-server:
 	python3 manage.py runserver
