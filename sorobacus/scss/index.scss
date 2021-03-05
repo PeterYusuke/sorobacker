@@ -1,15 +1,16 @@
 
 @import 'body';
 @import 'nav';
+@import 'constants';
 
 .main-content{
-    background-color: blue;
     margin-top: 0px;
 }
 
 .introduction{
     background-color: white;
 }
+
 
 
 .name-item{
@@ -19,4 +20,50 @@
 
 .description{
     text-align: center;
+}
+
+.container-about{
+    margin: auto;
+    background-color: $base-color;
+}
+
+.about-txt{
+    color: white;
+    text-align: center;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    justify-content: center;
+    .co1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .col2{
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+}
+
+.container-description{
+    background-color: white;
+    p{
+        font-size: 15px;
+    }
+}
+
+.contact{
+    text-align: center;
+    h2{
+        font-size: 20px;
+    };
+    a{
+    }
+}
+
+.btn-github{
+    color: red;
 }

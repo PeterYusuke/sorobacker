@@ -1,6 +1,8 @@
 
+@import 'constants';
+
 nav{
-    background-color: #337357;
+    background-color: $base-color;
     list-style-type: none;
     margin: 0;
     padding: 0;
