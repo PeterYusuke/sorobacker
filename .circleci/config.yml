@@ -12,14 +12,8 @@ jobs:
       - run:
           command: python3 manage.py test
           name: Test
-  docker-build-test:
-    steps:
-      - run: docker-compose up
 
 workflows:
   main:
     jobs:
-      - build-and-test
-  docker:
-    jobs:
-      - docker-build-test
+      - build-and-Test
