@@ -29,6 +29,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "0.0.0.0",
     "sorobacker.df.r.appspot.com",
+    "sorobacus-kxcms2qoaq-ue.a.run.app",
 ]
 
 

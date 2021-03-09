@@ -1,4 +1,4 @@
- 
+import os 
 from sorobacus.wsgi import application
 
 # App Engine by default looks for a main.py file at the root of the app
@@ -9,3 +9,6 @@ from sorobacus.wsgi import application
 # Alternatively, you can add a custom entrypoint field in your app.yaml:
 # entrypoint: gunicorn -b :$PORT sorobacus.wsgi
 app = application
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
