@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
     "0.0.0.0",
     "sorobacker.df.r.appspot.com",
     "sorobacus-kxcms2qoaq-ue.a.run.app",
+    '*',
 ]
 
 

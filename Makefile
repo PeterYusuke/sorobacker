@@ -17,10 +17,13 @@ venv:
 	virtualenv env 
 
 gcloud-set:
-	export GOOGLE_CLOUD_PROJECT=<PROJECT_ID>
+	export GOOGLE_CLOUD_PROJECT=sorobacker
 
 gcloud-up-image:
-	gcloud builds submit --tag gcr.io/${GOOGLE_CLOUD_PROJECT}/sorobacus
+	gcloud builds submit --tag gcr.io/sorobacker/sorobacus
 
 gcloud-deploy:
-	cloud run deploy sorobacus --image gcr.io/${GOOGLE_CLOUD_PROJECT}/sorobacus
+	gcloud run deploy sorobacus --image gcr.io/sorobacker/sorobacus
+
+docker-compose:
+	sudo docker-compose up

@@ -6,6 +6,8 @@ services:
       dockerfile: Dockerfile
     command: pysassc sorobacus/scss/index.scss sorobacus/static/css/styles.css -s expanded
     command: python3 manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/usr/src/app/
     ports:
       - 8000:8000
     volumes:
