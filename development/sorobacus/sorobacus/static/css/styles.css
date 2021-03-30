@@ -1,0 +1,92 @@
+body {
+  margin: auto;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  background-color: #337357;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 14px 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: #1b523a;
+}
+
+.main-content {
+  margin-top: 0px;
+}
+
+.introduction {
+  background-color: white;
+}
+
+.name-item {
+  margin: auto;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+.container-about {
+  margin: auto;
+  background-color: #337357;
+}
+
+.about-txt {
+  color: white;
+  text-align: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.row .co1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.row .col2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.container-description {
+  background-color: white;
+}
+
+.container-description p {
+  font-size: 15px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 20px;
+}
+
+.btn-github {
+  color: red;
+}
