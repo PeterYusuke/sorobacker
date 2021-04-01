@@ -59,7 +59,9 @@ ROOT_URLCONF = 'django_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            'django_project/templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -122,5 +124,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+import os
+
+# collect static file directory
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# server static file url
 STATIC_URL = '/static/'
-STATIC_ROOT = '/static/'
+
+# local host file url
+STATICFILES_DIRS = [
+    "/static/",
+]
