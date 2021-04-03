@@ -1,3 +1,39 @@
+body{
+    margin:auto;
+}
+
+a{
+    text-decoration:none;
+}
+
+header{
+    padding: 5px 5px 0px 5px;
+    background-color: #337357;
+    height: 40px;
+    position:relative;
+}
+
+header #header_name a{
+    float:left;
+    color: white;
+    font-size: 30px;
+}
+
+header #header_links div{
+    float: right;
+}
+
+header #header_links li{
+    list-style-type: none;  
+    position:relative; 
+    top:18px;
+    right:3px;
+}
+
+header #header_links a{
+    color: white;
+}
+
 h2 {
-    color:darkgreen;
+    color:rgb(0, 100, 5);
 }
