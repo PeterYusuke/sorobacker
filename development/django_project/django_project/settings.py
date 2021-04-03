@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import os
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -60,7 +62,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'django_project/templates',
+            os.path.join(os.path.dirname(os.path.dirname(__file__)), 'django_project/templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -123,8 +125,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-
-import os
 
 # collect static file directory
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
