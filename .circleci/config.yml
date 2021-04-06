@@ -8,7 +8,7 @@ jobs:
     executor: python/default
     steps:
       - checkout
-      - run: pip install -r requirements.txt
+      - run: pip install -r development/requirements.txt
       - run:
           command: python3 manage.py test
           name: Test
