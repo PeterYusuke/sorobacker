@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run: pip install -r development/requirements.txt
       - run:
-          command: python3 manage.py test
+          command: python3 development/django_project/manage.py test
           name: Test
 
 workflows:
