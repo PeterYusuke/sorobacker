@@ -6,4 +6,7 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
+# this line is made for static file url
+# remove when collecting static
+#  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
