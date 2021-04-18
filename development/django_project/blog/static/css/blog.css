@@ -6,7 +6,7 @@ html{
 html, body{
     padding : 0;
     margin : 0;
-    background : #E4E3D3
+    background-color : #E4E3D3
 }
 
 li{
@@ -35,11 +35,16 @@ a{
 }
 
 header{
-    padding: 5px 5px 0px 5px;
+    padding: 0;
     background-color: #337357;
     height: 100px;
     width: 100%;
     position:relative;
+}
+
+#header_name ul{
+    list-style: none;
+    display: inline-block;
 }
 
 header #header_name a{
@@ -47,20 +52,23 @@ header #header_name a{
     color: white;
     font-size: 53px;
     text-align: center;
-    position: absolute;
+    position: center;
     bottom: 0;
 }
 
 header #header_links div{
     float: right;
-    height: 100%;
 }
 
 header #header_links li{
     list-style-type: none;  
     position:relative; 
-    top:18px;
     right:3px;
+}
+
+#header_links #right ul{
+    list-style: none;
+    display: inline-block;
 }
 
 header #header_links a{
@@ -72,21 +80,9 @@ header #header_links a{
     height: 100%;
 }
 
-section{
-    padding : 0px;
-    margin : 0px;
-    position : absolute;
-    width : 100%;
-    height : 100%;
-}
 
-#right{
-    height : 100%;
-}
-
-#right li {
+#right ul li {
     float:right;
-    list-style-type: none;
 }
 
 #right li a {
@@ -94,4 +90,13 @@ section{
     display : block;
     padding-right : 16px;
     font-size : 37px;
+}
+
+#right{
+    height: 100%;
+    position: relative;
+}
+
+#back_img{
+    top: 0;
 }

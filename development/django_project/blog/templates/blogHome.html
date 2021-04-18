@@ -1,33 +1,33 @@
-{% extends "home.html" %}}
-{% load static %}
+{% extends "home.html" %}} {% load static %} {% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}" />
+{% endblock %} {% block body %}
+<header>
+  <div id="header_name">
+    <ul>
+      <li>
+        <a href="#">Sorobacus</a>
+      </li>
+    </ul>
+  </div>
+  <div id="header_links">
+    <div id="right">
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Abount</a></li>
+        <li><a href="#">Tutorial</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<section>
+  <div>
+    <h1>
+      Yusuke<br />
+      Peter<br />
+      Sơn<br />
+      Yamashita
+    </h1>
+  </div>
+</section>
 
-{% block head %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
-{% endblock %}
-
-{% block body %}
-<!-- <img src="{% static 'img/HomeSun.jpg' %}" alt=""> -->
-    <header>
-        <div id='header_name'>
-            <li>
-                <a href = '#'>Sorobacus</a>
-            </li>
-        </div>
-        <div id='header_links'>
-            <div id='right'>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Abount</a></li>
-                <li><a href="#">Tutorial</a></li>
-            </div>
-        </div>
-    </header>
-    <section>
-        <div>
-            <h1>Yusuke<br>
-                Peter<br>
-                Sơn<br>
-                Yamashita
-            </h1>
-        </div>
-    </section>
 {% endblock %}
