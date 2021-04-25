@@ -130,7 +130,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # server static file url
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 # local host file url
 STATICFILES_DIRS = [
