@@ -140,5 +140,8 @@ STATIC_URL = 'static/'
 
 # local host file url
 STATICFILES_DIRS = [
-    "/static/",
+    # django_project static files
+    os.path.join(BASE_DIR, 'django_project/static'),
+    # blog static files
+    os.path.join(BASE_DIR, 'blog/static'),
 ]
