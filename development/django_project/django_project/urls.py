@@ -20,10 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('blog/', include('blog.urls')),
+    # path('admin/', admin.site.urls),
+    # path('blog/', include('blog.urls')),
+    path('', include('blog.urls')),
 ]
-
-# this line is made for static file url
-# remove when collecting static
-#  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
