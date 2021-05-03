@@ -34,7 +34,7 @@ a{
     position:relative;
 }
 
-header{
+header, footer{
     padding: 0;
     background-color: #337357;
     height: 100px;
@@ -102,13 +102,23 @@ header #header_links a{
 }
 
 section{
+    position: relative;
     width: 100%;
-    overflow-y: hidden;
+    overflow: hidden;
+    margin: 0;
     padding: 0;
     height: 100%;
 }
 
 section img#HomeSun_img{
+    padding: 0;
+    margin: 0;
     width: 120%;
     height: auto;
+}
+
+section #name{
+    position: absolute;
+    top: 10%;
+    left: 5%;
 }
